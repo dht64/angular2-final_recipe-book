@@ -1,0 +1,13 @@
+<div class="row" style="margin-bottom: 10px;">
+	<div class="col-xs-12">
+		<a href="" class="btn btn-success">New Recipe</a>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<ul class="list-group" style="box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);">
+			<app-recipe-item [recipe]="recipe" (click)="onSelected(recipe)"></app-recipe-item>
+		</ul>
+	</div>
+</div>
