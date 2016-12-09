@@ -1,8 +1,8 @@
-<div class="row">
+<div class="row" style="margin-bottom: 20px;">
 	<div class="col-md-5">
-		<app-recipe-list (recipeSelected)="selectedRecipe = $event"></app-recipe-list>
+		<app-recipe-list></app-recipe-list>
 	</div>
-	<div class="col-md-7">
-		<app-recipe-detail [selectedRecipe]="selectedRecipe"></app-recipe-detail>
+	<div class="col-md-7" style="box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); padding: 20px; margin-top: 44px;">
+		<router-outlet></router-outlet>
 	</div>
 </div>

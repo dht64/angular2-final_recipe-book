@@ -1,11 +1,12 @@
-<a href="#" class="list-group-item clearfix">
+<a [routerLink]="recipeId" class="list-group-item clearfix" routerLinkActive="active" style="margin-bottom: 10px; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">
   <div class="pull-left">
     <h4 class="list-group-item-heading">{{recipe.name}}</h4>
-    <p class="list-group-item-text">{{recipe.description}}</p>
-  </div>
-  <span class="pull-right">
+    <span class="pull-right">
       <img class="img-responsive"
            src="{{recipe.imagePath}}"
-           style="max-height: 50px;"/>
-  </span>
+           style="max-height: 70px;"/>
+  	</span>
+    <p class="list-group-item-text">{{recipe.description}}</p>
+  </div>
+  
 </a>
